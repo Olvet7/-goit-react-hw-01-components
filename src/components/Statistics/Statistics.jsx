@@ -19,8 +19,7 @@ const StatsItem = ({ stats }) => {
 export const Statistics = ({ title, stats }) => {
   return (
     <section className={scss.statistics}>
-      {/* <h2 className={scss.title}>{title}</h2> */}
-      {title && <h2>{title}</h2>}
+      {title && <h2 className={scss.title}>{title}</h2>}
       <StatsItem stats={stats} />
     </section>
   );
